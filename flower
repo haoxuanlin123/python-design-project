@@ -1,0 +1,18 @@
+from random import randint
+bob = turtle.Turtle()
+turtle.bgcolor('black')
+bob.speed(0)
+bob.hideturtle()
+for times in range(100):
+  bob.penup()
+  bob.goto(randint(-400,400),randint(-400,400))
+  bob.pendown()
+  for c in ['red', 'green', 'yellow', 'blue','orange','#4815AA']:
+    bob.color(c)
+    bob.circle(20)
+    bob.left(60)
+    
+
+
+
+turtle.done()
